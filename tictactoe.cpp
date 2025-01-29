@@ -22,6 +22,7 @@ int main()
     board(spaces);
 
     while(run){
+    	
         useplayer(spaces, player);
         board(spaces);
         if(winner(spaces, player, computer)){
@@ -51,7 +52,7 @@ int main()
 }
 
 void board(char *spaces){
-
+system("cls");
 cout << '\n';
 cout << "     |     |     " << '\n';
 cout << " " << spaces[0] << "   |  " << spaces[1] << "  |  " << spaces[2] << "  " << '\n';
